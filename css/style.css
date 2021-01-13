@@ -57,7 +57,6 @@ li {
     margin-top: 164px;
 }
 .text-left {
-    width: 450px;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -134,7 +133,6 @@ li {
   }
   
   .text-us {
-    width: 600px;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -190,7 +188,6 @@ li {
     margin-top: 164px;
 }
 .text-right {
-    width: 600px;
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -373,13 +370,7 @@ li {
         height: 262px;
     }
     .left-side-main {
-        margin-left: 10px;
-    }
-    .text-left {
-        width: 284px;
-    }
-    .text-us {
-        width: 325px;
+        text-align: center;
     }
     .right-side-main {
         background-position: center;
@@ -397,14 +388,8 @@ li {
     .image-table {
         background-position: center;
     }
-    .right-side-intro-second {
-        margin-left: 15px;
-    }
     .title-right {
         margin-top: 42px;
-    }
-    .text-right {
-        width: 312px;
     }
     .card {
         text-align: center;
@@ -453,6 +438,7 @@ li {
     }
     .about-use {
         float: none;
+        text-align: center;
     }
     .right-side-intro {
         position: relative;
@@ -491,5 +477,8 @@ li {
     }
     .header-form {
         display: block;
+    }
+    .right-side-intro-second {
+        text-align: center;
     }
 }
