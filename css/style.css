@@ -442,9 +442,6 @@ li {
         background-position: center;
         background-size: cover;
     }
-    .left-side-main {
-        margin-left: 19%;
-    }
     .image-table {
         position: relative;
         width: 100%;
@@ -456,7 +453,6 @@ li {
     }
     .about-use {
         float: none;
-        margin-left: 20%;
     }
     .right-side-intro {
         position: relative;
@@ -469,9 +465,6 @@ li {
     }
     .intro-flex {
         flex-direction: column-reverse;
-    }
-    .right-side-intro-second {
-        margin-left: 20%;
     }
     .image {
         width: 265px;
