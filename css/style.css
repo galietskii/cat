@@ -228,7 +228,7 @@ li {
     justify-content: center;
 }
 .image {
-    width: 383px;
+    width: 100%;
     height: 300px;
 }
 .third-image {
@@ -366,7 +366,7 @@ li {
         display: none;
     }
     .image {
-        width: 305px;
+        width: 100%;
         height: 262px;
     }
     .left-side-main {
@@ -387,9 +387,19 @@ li {
     }
     .image-table {
         background-position: center;
+        width: 50%;
     }
     .title-right {
         margin-top: 42px;
+    }
+    .text-us {
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+    }
+    .right-side-intro {
+        right: 0px;
+        position: absolute;
+        width: 50%;
     }
     .card {
         text-align: center;
@@ -453,7 +463,7 @@ li {
         flex-direction: column-reverse;
     }
     .image {
-        width: 265px;
+        width: 100%;
         height: 262px;
     }
     .flex-wrap {
