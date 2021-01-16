@@ -503,6 +503,9 @@ li {
         width: auto;
         text-align: center;
     }
+    .text-contact input {
+        margin-left: 6px;
+    }
     .form-name input {
         width: 100%;
     }
