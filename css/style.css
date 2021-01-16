@@ -470,6 +470,9 @@ li {
         float: none;
         text-align: center;
     }
+    .select {
+        padding: 6px 65% 6px 0;
+    }
     .right-side-intro {
         position: relative;
         width: 100%;
@@ -497,13 +500,13 @@ li {
         display: none;
     }
     .form {
-        width: 437px;
+        width: 86%;
     }
     .form-name input {
         width: 100%;
     }
     .text-message {
-        padding: 0px 64% 100px 0;
+        padding: 0px 43% 100px 0;
     }
     .header-form {
         display: block;
