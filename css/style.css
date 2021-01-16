@@ -500,7 +500,8 @@ li {
         display: none;
     }
     .form {
-        width: 86%;
+        width: auto;
+        text-align: center;
     }
     .form-name input {
         width: 100%;
