@@ -56,7 +56,7 @@ li {
     margin-top: 164px;
 }
 .text-left {
-    font-family: "Open Sans", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -95,7 +95,7 @@ li {
     height: 100%;
     background-image: url("../images/table.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
 }
 .intro {
@@ -115,16 +115,23 @@ li {
     height: 100%;
     background-image: url("../images/large_flash-0.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
   }
   
   .about-use {
     float: right;
-  }
+    margin-right: 8%;
+}
+.right-side-intro-second {
+    margin-left: 9%;
+}
+.left-side-main {
+    margin-left: 3%;
+}
   
   .title-us {
-    font-family: "Gotham Black", serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 22px;
@@ -132,7 +139,7 @@ li {
   }
   
   .text-us {
-    font-family: "Open Sans", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -174,7 +181,7 @@ li {
     height: 100%;
     background-image: url("../images/large_flash-0.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
 }
 .right-side-intro {
@@ -187,7 +194,7 @@ li {
     margin-top: 164px;
 }
 .text-right {
-    font-family: "Open Sans", sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 24px;
@@ -207,7 +214,7 @@ li {
     height: 100%;
     background-image: url("../images/image17709.jpg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     background-size: cover;
 }
 .intro-gallery {
@@ -251,10 +258,27 @@ li {
 .card {
     text-align: center;
     padding: 40px;
+    border-bottom: 1px solid  rgba(59, 59, 59, 0.295);
+    border-right: 1px solid rgba(59, 59, 59, 0.295);
+}
+.line {
+    border-bottom: none;
+}
+
+.card-third {
+    border-right: none;
+}
+.card-six {
+    border-bottom: none;
+    border-right: none
+}
+.card-fourth {
+    border-bottom: none;
 }
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card i {
     font-size: 30px;
@@ -280,14 +304,12 @@ li {
 .header-form {
     display: flex;
 }
-.form-name {
-    margin-right: 10px;
-}
 .form-name p{
     display: block;
 }
 .form-name input {
     padding: 8px 6%;
+    margin-right: 10px;
 }
 .text-contact input{
     margin-left: 15px;
@@ -351,7 +373,26 @@ li {
 .descr p{
     color: white;
 }
-@media (max-width: 601px) {
+@media (max-width: 1034px) {
+    .card-second {
+        border-right: none;
+    }
+    .card-fourth {
+        border-right: none;
+    }
+    .card-third {
+        border-right: 1px solid rgba(59, 59, 59, 0.295);
+    }
+    .card-fourth {
+        border-bottom: 1px solid rgba(59, 59, 59, 0.295);
+    }
+}
+@media (max-width: 695px) {
+    .card {
+        border-right: none;
+    }
+}
+@media (max-width: 605px) {
     .right-side {
         display: none;
     }
@@ -360,6 +401,15 @@ li {
     }
     .third-image {
         display: none;
+    }
+    .card-second {
+        border-right: none;
+    }
+    .card-fourth {
+        border-right: none;
+    }
+    .card-first {
+        border-right: none;
     }
     .fourth-image {
         display: none;
@@ -385,7 +435,7 @@ li {
         font-size: 29px;
     }
     .text-left {
-        font-family: "Open Sans", sans-serif;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 10px;
         font-weight: 400;
         line-height: 24px;
@@ -424,6 +474,10 @@ li {
     .card {
         text-align: center;
         padding: 19px;
+    }
+
+    .card-third {
+        border-right: 1px solid rgba(59, 59, 59, 0.295);
     }
     .form {
         width: 530px;
@@ -517,5 +571,9 @@ li {
     }
     .right-side-intro-second {
         text-align: center;
+    }
+    .card {
+        border-bottom: 1px solid  rgba(59, 59, 59, 0.295);
+        border-right: none;
     }
 }
