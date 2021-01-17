@@ -127,13 +127,15 @@ li {
   
   .about-use {
     float: right;
-    margin-right: 7%;
+    margin-right: 12%;
+    margin-top: 18px;
 }
 .right-side-intro-second {
     margin-left: 8%;
 }
 .left-side-main {
-    margin-left: 3%;
+    margin-left: 7%;
+    margin-bottom: 55px;
 }
   
 .title-us {
