@@ -136,6 +136,7 @@ li {
     font-weight: 400;
     line-height: 22px;
     margin-top: 164px;
+    margin-left: 10%;
   }
   
   .text-us {
@@ -144,6 +145,7 @@ li {
     font-weight: 400;
     line-height: 24px;
     margin-top: 28px;
+    margin-left: 10%;
   }
   
   .button-link {
@@ -162,6 +164,7 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     transition-duration: 1s;
+    margin-left: 10%;
   }
   
   .link-button:hover {
@@ -299,7 +302,7 @@ li {
 .form {
     position: relative;
     display: block;
-    width: 610px;
+    width: 580px;
 }
 .header-form {
     display: flex;
@@ -310,6 +313,7 @@ li {
 .form-name input {
     padding: 8px 6%;
     margin-right: 10px;
+    width: 187px;
 }
 .text-contact input{
     margin-left: 15px;
@@ -318,7 +322,8 @@ li {
     padding: 6px 82% 6px 0;
 }
 .text-message {
-    padding: 0 71% 100px 0;
+    padding: 0 0 100px 0;
+    width: 100%;
 }
 .flex-form {
     display: flex;
@@ -391,6 +396,17 @@ li {
     .card {
         border-right: none;
     }
+    .title-left {
+        font-size: 31px;
+    }
+    .text-left {
+        font-size: 9px;
+    }
+
+    .text-message {
+        padding: 0 70% 100px 0;
+    }
+
 }
 @media (max-width: 605px) {
     .right-side {
@@ -454,6 +470,7 @@ li {
     }
     .title-us {
         margin-top: 55px;
+        margin-left: 10%;
     }
     .image-table {
         background-position: center;
@@ -465,7 +482,9 @@ li {
     .text-us {
         font-family: "Open Sans", sans-serif;
         font-size: 10px;
+        margin-left: 10%;
     }
+
     .right-side-intro {
         right: 0px;
         position: absolute;
@@ -475,6 +494,9 @@ li {
         text-align: center;
         padding: 19px;
     }
+    .select {
+        padding: 6px 79% 6px 0;
+    }
 
     .card-third {
         border-right: 1px solid rgba(59, 59, 59, 0.295);
@@ -483,13 +505,9 @@ li {
         width: 530px;
     }
     .form-name input {
-        padding: 8px 0;
-    }
-    .text-message {
-        padding: 0px 67% 100px 0;
-    }
-    .select {
-        padding: 6px 79% 6px 0;
+        padding: 8px 6%;
+        margin-right: 10px;
+        width: 166px;
     }
     .form-name {
         margin-right: 3px;
