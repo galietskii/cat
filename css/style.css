@@ -547,6 +547,8 @@ li {
     .about-use {
         float: none;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .select {
         padding: 6px 73% 6px 0;
@@ -601,13 +603,21 @@ li {
         display: block;
     }
     .right-side-intro-second {
+        margin-right: auto;
         text-align: center;
         width: 70%;
+        margin-left: auto;
         margin-top: 18px;
     }
     .card {
         border-bottom: 1px solid  rgba(59, 59, 59, 0.295);
         border-right: none;
+    }
+    .left-side-main {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 55px;
+        width: 70%;
     }
 }
 }
