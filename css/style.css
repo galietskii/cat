@@ -551,12 +551,14 @@ li {
         margin-right: auto;
     }
     .select {
-        padding: 6px 73% 6px 0;
+        padding: 6px 64% 6px 0;
     }
     .third-image {
         display: none;
     }
-
+    .text-contact {
+        font-size: 13px;
+    }
     .right-side-intro {
         position: relative;
         width: 100%;
