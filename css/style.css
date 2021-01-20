@@ -37,19 +37,6 @@ li {
     margin-right: 20px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: transparent;
-    transition-duration: 1s;
-    border-radius: 5px;
-    padding: 10px 2px;
-}
-.link:hover {
-    background-color: black;
-    color: white;
-    transition-duration: 1s;
-}
-.logo:hover {
-    background-color: unset;
-    color: unset;
 }
 .right-side i{
     padding-left: 15px;
@@ -480,33 +467,13 @@ li {
     .right-side-intro-second {
         margin-left: 12%;
     }
-@media (max-width: 697px) {
+
+@media (max-width: 677px) {
+    .card {
+        border-bottom: 1px solid rgba(59, 59, 59, 0.295);
+    }
     .card {
         border-right: none;
-    }
-    .title-left {
-        font-size: 27px;
-    }
-    .text-left {
-        font-size: 12px;
-    }
-    .link {
-        font-size: 12px;
-    }
-    .text-message {
-        padding: 0 70% 100px 0;
-    }
-    .first-block {
-        display: none;
-    }
-    .third-block {
-        display: none;
-    }
-    .right-side-intro {
-        width: 50%;
-    }
-    .right-side-intro-second {
-        margin-left: 6%;
     }
 }
 @media (max-width: 620px) { 
@@ -545,7 +512,7 @@ li {
         height: 400px;
         background-image: url("../images/table.png");
         background-repeat: no-repeat;
-        background-position: revert;
+        background-position: center;
         background-size: cover;
     }
     .image-table {
