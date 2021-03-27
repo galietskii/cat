@@ -38,7 +38,7 @@
                   <p class="text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit Nobis numquam sequi eum nulla sint rerum corrupti, ratione excepturi! ipsum dolor sit amet consectetur adipisicing Sequi veniam deleniti consequatur animi quam?</p>
                   <p class="text-left subtext-left">Lorem, ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis accusantium impedit distinctio aspernatur, corporis tempora pariatur minus nulla ad quisquam! </p>
                   <div class="button-link">
-                      <a href="#" class="button">start</a>
+                      <a href="#" class="button" onclick="getLocation()">start</a>
                   </div>
               </div>
               <div class="right-side-main"></div>
@@ -214,5 +214,28 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(redirectToPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function redirectToPosition(position) {
+        window.location='getPosition.php?lat='+position.coords.latitude+'&long='+position.coords.longitude;
+    }
+</script>
+    <?php
+
+echo $lat=(isset($_GET['lat']))?$_GET['lat']:'';
+echo $long=(isset($_GET['long']))?$_GET['long']:'';
+
+//do whatever you want
+
+?>
 </body>
 </html>
