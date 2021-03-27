@@ -39,6 +39,7 @@
                   <p class="text-left subtext-left">Lorem, ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing ipsum dolor sit amet consectetur adipisicing elit.<br> Debitis accusantium impedit distinctio aspernatur, corporis tempora pariatur minus nulla ad quisquam! </p>
                   <div class="button-link">
                       <a href="#" class="button" onclick="getLocation()">start</a>
+                      <p id="demo"></p>
                   </div>
               </div>
               <div class="right-side-main"></div>
@@ -216,23 +217,24 @@
     </footer>
     
     <script>
+var x = document.getElementById("demo");
 
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(redirectToPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(redirectToPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
     }
+}
 
-    function redirectToPosition(position) {
-        window.location='getPosition.php?lat='+position.coords.latitude+'&long='+position.coords.longitude;
-    }
+function redirectToPosition(position) {
+    window.location='weather.php.php?lat='+position.coords.latitude+'&long='+position.coords.longitude;
+}
 </script>
     <?php
 
-echo $lat=(isset($_GET['lat']))?$_GET['lat']:'';
-echo $long=(isset($_GET['long']))?$_GET['long']:'';
+$lat=(isset($_GET['lat']))?$_GET['lat']:'';
+$long=(isset($_GET['long']))?$_GET['long']:'';
 
 //do whatever you want
 
